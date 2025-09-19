@@ -1,0 +1,22 @@
+git config --global user.name "Roxie Tian"
+git config --global user.email "roxietian18@hotmail.com"
+
+
+age = 36                 # int
+price = 19.99            # float
+name = "Roxie"           # str
+is_pm = True             # bool
+
+# Inspect types
+print("age:", age, type(age))
+print("price:", price, type(price))
+print("name:", name, type(name))
+print("is_pm:", is_pm, type(is_pm))
+
+# Type conversions
+print("int(price):", int(price))   # truncates decimals
+print("str(age):", str(age))
+print("int(is_pm):", int(is_pm))   # True -> 1, False -> 0
+
+# f-string formatting
+print(f"{name} is {age} years old, price={price:.2f}, PM={is_pm}")
